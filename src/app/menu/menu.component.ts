@@ -10,11 +10,26 @@ import { CartService } from '../cart.service';
 })
 export class MenuComponent {
   products: Iproducts[] = products;
-  product: Iproducts = {} as Iproducts;
+  selectedCategory: string | null = null;
 
   constructor(private cartService: CartService) {}
 
   addToCart(product: Iproducts) {
     this.cartService.addToCart(product);
+  }
+
+  filterProducts(category: string) {
+    this.selectedCategory = category;
+  }
+
+  showAllProducts() {
+    this.selectedCategory = null;
+  }
+
+  getProductDisplayStyle(product: Iproducts): string {
+    if (this.selectedCategory && product.category !== this.selectedCategory) {
+      return 'none';
+    }
+    return 'block';
   }
 }
