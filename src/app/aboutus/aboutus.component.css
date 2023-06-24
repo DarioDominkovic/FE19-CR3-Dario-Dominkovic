@@ -1,0 +1,53 @@
+.about {
+  min-height: 80vh;
+  margin: 0 50px;
+}
+h1 {
+  text-align: center;
+  margin: 50px 0px;
+  border-bottom: 5px var(--green) solid;
+}
+
+.about .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 60px;
+  overflow-x: hidden;
+}
+
+.about .row .image {
+  flex: 1;
+  text-align: center;
+}
+
+.about .row .image img {
+  max-width: 100%;
+  filter: drop-shadow(0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3));
+}
+
+.about .row .content {
+  flex: 1;
+  background-color: var(--green);
+  border-radius: 30px;
+  padding: 40px;
+}
+
+.about .row .content h3 {
+  color: white;
+}
+
+.about .row .content p {
+  font-size: 20px;
+  color: white;
+}
+
+.about .row .content .btn {
+  color: var(--green);
+  border-color: var(--green);
+  outline-color: var(--green);
+}
+
+.about .row .content .btn:hover {
+  color: #fff;
+}

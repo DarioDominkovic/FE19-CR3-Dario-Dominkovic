@@ -1,0 +1,16 @@
+<section class="menu">
+  <h1 class="menu-header"><span>MENU</span></h1>
+
+  <div class="menu-container">
+    <div class="menu-info" *ngFor="let product of products; index as x">
+      <img [src]="product.image" />
+      <div class="description">
+        <h3>{{ product.name }}</h3>
+        <h4>{{ product.price | currency }}</h4>
+      </div>
+      <div class="menu-buttons"></div>
+      <button id="details" routerLink="/product/{{ x }}">Details</button>
+      <button id="order" (click)="addToCart(product)">Order</button>
+    </div>
+  </div>
+</section>

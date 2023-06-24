@@ -1,0 +1,85 @@
+.menu {
+  min-height: 80vh;
+  margin: 0 50px;
+}
+.menu .menu-header {
+  text-align: center;
+  margin: 50px 0px;
+  border-bottom: 5px var(--green) solid;
+
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.menu .menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu .menu-container .menu-info {
+  height: 600px;
+  width: 500px;
+  margin: 20px;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.menu .menu-container .menu-info img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+.menu .menu-container .menu-info .description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--green) solid 10px;
+}
+.description h3 {
+  text-align: center;
+  margin: 20px;
+  font-weight: bolder;
+  color: var(--green);
+  align-items: start;
+}
+.description h4 {
+  text-align: center;
+  margin: 20px;
+  font-weight: bolder;
+  color: red;
+  align-items: end;
+}
+.menu-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+button {
+  background-color: white;
+  border: 0cm;
+}
+#details {
+  color: var(--green);
+  font-size: 30px;
+  font-weight: bolder;
+  margin-left: 20%;
+  padding: 10px 20px;
+}
+
+#order {
+  color: red;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-left: 10%;
+  padding: 10px 20px;
+}
+
+#order:hover,
+#details:hover {
+  background-color: #f1f1f1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+  border-right: 3px solid rgba(0, 0, 0, 0.3);
+}

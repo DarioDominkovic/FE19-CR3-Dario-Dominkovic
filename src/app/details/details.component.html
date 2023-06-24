@@ -1,0 +1,19 @@
+<section class="details">
+  <h1 class="details-header">DETAILS</h1>
+
+  <div class="details-container" *ngIf="product">
+    <div class="details-image">
+      <img [src]="product.image" />
+    </div>
+    <div class="details-header">
+      <h3>{{ product.name }}</h3>
+    </div>
+    <div class="details-main">
+      <h3>{{ product.description }}</h3>
+    </div>
+    <div class="details-buttons">
+      <button id="back" routerLink="/menu">Back</button>
+      <button id="order" (click)="addToCart()">Order</button>
+    </div>
+  </div>
+</section>

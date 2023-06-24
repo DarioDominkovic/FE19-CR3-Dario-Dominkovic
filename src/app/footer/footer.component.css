@@ -1,0 +1,66 @@
+.footer {
+  background: #2c3e50;
+}
+
+.footer img {
+  width: 100%;
+}
+
+.footer .box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer .box-container .box {
+  flex: 1;
+  margin: 30px;
+}
+
+.footer .box-container .box .heading {
+  box-shadow: 0 0.2rem 0.05rem #fff6;
+  text-align: left;
+}
+
+.footer .box-container .box .heading span {
+  font-size: 30px;
+  color: yellow;
+}
+
+.footer .box-container .box p {
+  font-size: 30px;
+  color: #eee;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box:first-child p {
+  font-size: 30px;
+}
+
+.footer .box-container .box p i {
+  padding: 0 0.5rem;
+  color: #fff;
+}
+
+.footer .box-container .box a {
+  font-size: 30px;
+  display: block;
+  padding: 0.5rem 0;
+  color: #eee;
+}
+
+.footer .box-container .box a:hover {
+  color: yellow;
+}
+
+.footer .credit {
+  font-size: 15px;
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #fff;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
+.footer .credit span {
+  color: var(--green);
+}

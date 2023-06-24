@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
+:root {
+  --green: #01828e;
+  --yellow: #f6e547;
+}
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  transition: all 0.2s cubic-bezier(0.37, 1.14, 0.26, 1.24);
+}
+
+*::selection {
+  background: var(--green);
+  color: #fff;
+}
+a {
+  text-decoration: none;
+}

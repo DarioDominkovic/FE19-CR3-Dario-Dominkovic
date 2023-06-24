@@ -1,0 +1,98 @@
+.cart {
+  min-height: 80vh;
+  margin: 0 50px;
+}
+h1 {
+  text-align: center;
+  margin: 50px 0px;
+  border-bottom: 5px var(--green) solid;
+}
+
+.cart .row {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f7f7f7;
+}
+
+.cart .row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cart .col-md-3 {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+.cart .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.cart h3 {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.cart .input-group {
+  margin: 10px 0;
+}
+
+.cart .form-control {
+  text-align: center;
+}
+
+.cart .btn {
+  width: 30px;
+}
+
+.cart .btn-danger {
+  width: 100%;
+}
+
+.cart-service {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f7f7;
+  border: solid 2px black;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.service-labels {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.service-values {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.amount {
+  font-weight: bold;
+}
+
+.discount-amount {
+  margin-top: 5px;
+  font-weight: bold;
+}
+.confirm {
+  width: 100%;
+  padding: 20px 0px;
+  color: yellow;
+  background-color: #2c3e50;
+  font-weight: bolder;
+  font-size: 30px;
+}
