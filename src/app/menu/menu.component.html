@@ -8,9 +8,15 @@
         <h3>{{ product.name }}</h3>
         <h4>{{ product.price | currency }}</h4>
       </div>
-      <div class="menu-buttons"></div>
-      <button id="details" routerLink="/product/{{ x }}">Details</button>
-      <button id="order" (click)="addToCart(product)">Order</button>
+      <div class="menu-buttons">
+        <ng-container *ngIf="product.isAvailable">
+          <button id="details" routerLink="/product/{{ x }}">Details</button>
+          <button id="order" (click)="addToCart(product)">Order</button>
+        </ng-container>
+        <ng-container *ngIf="!product.isAvailable">
+          <span class="not-available">Not available</span>
+        </ng-container>
+      </div>
     </div>
   </div>
 </section>

@@ -54,7 +54,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 button {
   background-color: white;
@@ -64,7 +64,6 @@ button {
   color: var(--green);
   font-size: 30px;
   font-weight: bolder;
-  margin-left: 20%;
   padding: 10px 20px;
 }
 
@@ -72,7 +71,6 @@ button {
   color: red;
   font-size: 30px;
   font-weight: bolder;
-  margin-left: 10%;
   padding: 10px 20px;
 }
 
@@ -82,4 +80,8 @@ button {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-bottom: 3px solid rgba(0, 0, 0, 0.3);
   border-right: 3px solid rgba(0, 0, 0, 0.3);
+}
+.not-available {
+  color: red;
+  font-size: 40px;
 }
